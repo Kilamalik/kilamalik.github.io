@@ -1,0 +1,276 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio - Malik Samath" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul class="links">
+          <li><a class="navbar" href="#welcome-section">About</a></li>
+          <li><a class="navbar" href="#projects">Projects</a></li>
+          <li><a class="navbar" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1>Welcome traveller..</h1>
+        <p>to my humble abode of projects</p>
+      </section>
+      <section id="projects">
+        <h1>These are my creations I have crafted over the years</h1>
+        <div class="projects-container">
+          <div class="project-tile">
+            <a class="project-page" href="https://codepen.io/Malik-Samath/full/rNPgyBv">
+              <img class="thumbnail" src="https://i.imgur.com/zKMZ9Ib.png" />
+            <p class="project-title">Product Landing Page</p>
+            </a>
+          </div>
+          <div class="project-tile">
+            <a class="project-page" href="https://codepen.io/Malik-Samath/full/ExrzgJY">
+              <img class="thumbnail" src="https://i.imgur.com/yWQ2m5b.png" />
+            <p class="project-title">User Survey Form</p>
+            </a>
+          </div>
+          <div class="project-tile">
+            <a class="project-page" href="https://codepen.io/Malik-Samath/full/jOdoygw">
+              <img class="thumbnail" src="https://i.imgur.com/YLxRbRy.png" />
+            <p class="project-title">Product Landing Page</p>
+            </a>
+          </div>
+          <div class="project-tile">
+            <a class="project-page" href="https://codepen.io/Malik-Samath/full/abXrmrb">
+              <img class="thumbnail" src="https://i.imgur.com/pu6qxkJ.png" />
+            <p class="project-title">Tribute Page - Nikola Tesla</p>
+            </a>
+          </div>
+          <div class="project-tile">
+            <a class="project-page" href="https://codepen.io/Malik-Samath/full/NWoVdZb">
+              <img class="thumbnail" src="https://i.imgur.com/Y37M9uh.png" />
+            <p class="project-title">Technical Documentation Page</p>
+            </a>
+          </div>
+        </div>
+        <button><a href="https://codepen.io/Malik-Samath">Show all <i class="fa-solid fa-angle-right"></i></a></button>
+      </section>
+    </main>
+    <footer id="contact">
+      <h1>Want to build robots that take over the world?</h1>
+      <p>Let's discuss it over a cup of tea..or coffee..or water</p>
+      <div class="platforms">
+        <a id="profile-link" href="" target="_blank"><i class="fa-brands fa-facebook"> Facebook</i></a>
+        <a id="profile-link" href="" target="_blank"><i class="fa-brands fa-github"> Github</i></a>
+        <a id="profile-link" href="" target="_blank"><i class="fa-brands fa-twitter"> Twitter</i></a>
+        <a id="profile-link" href="" target="_blank"><i class="fa-solid fa-envelope"> E-mail</i></a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  box-sizing: border-box;
+  --header-height: 80px;
+}
+
+body {
+ margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  height: var(--header-height);
+  background-color: #FF2E00;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border: 1px solid blue;
+}
+
+nav#navbar {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid black;
+}
+
+ul.links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  max-width: 400px;
+  border: 1px solid yellow;
+}
+
+li {
+  list-style: none;
+}
+
+a.navbar {
+  font-size: 1.2rem;
+}
+
+section#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #14110F;
+  text-align: center;
+}
+
+section#welcome-section > h1 {
+  margin-bottom: 0;
+  border: none;
+  font-size: 3rem;
+}
+
+section#welcome-section > p {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #FF2E00;
+}
+
+section#projects {
+  background-color: #2274A5;
+  padding: 80px 20px 80px;
+  text-align: center;
+}
+
+section#projects > h1 {
+  font-size: 2rem;
+}
+
+div.projects-container {
+  border: 1px solid white;
+  margin: 10px 0px;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.project-tile {
+  width: 250px;
+  background-color: #14110F;
+}
+
+.thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  transition: scale 0.5s ease;
+}
+
+.thumbnail:hover {
+  scale: 1.5;
+}
+
+section#projects > button {
+  height: 50px;
+  width: 150px;
+  background-color: #14110F;
+  border: none;
+  color: white;
+  transition: font-size 0.5s ease;
+}
+
+section#projects > button:hover {
+  font-size: 1rem;
+}
+
+footer {
+  height: 100vh;
+  background-color: #14110F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+footer > h1 {
+  border: none;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+footer > p {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #FF2E00;
+  text-align: center;
+}
+
+.platforms {
+  border: 1px solid white;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#profile-link {
+  transition: transform 0.6s ease;
+  padding: 20px 0;
+}
+
+#profile-link:hover {
+  transform: translateY(10px);
+}
+
+h1 {
+  border-bottom: 1px solid white;
+  display: inline;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  ul.links {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid yellow;
+  }
+
+  a.navbar {
+    font-size: 1.5rem;
+  }
+
+  .project-tile {
+    width: 90%;
+    background-color: #14110F;
+  }
+}
+
+** end of undefined **
+

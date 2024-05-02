@@ -1,0 +1,215 @@
+:root {
+  box-sizing: border-box;
+  --header-height: 80px;
+}
+
+body {
+  margin: 0;
+}
+
+.links a,
+.platforms a,
+#projects a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  height: var(--header-height);
+  background-color: #ff2e00;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav#navbar {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul.links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  max-width: 400px;
+}
+
+ul.links > li:hover {
+  transform: scale(1.2);
+}
+
+ul.links > li > a:hover {
+  color: #14110f;
+}
+
+li {
+  list-style: none;
+}
+
+a.navbar {
+  font-size: 1.2rem;
+}
+
+.face {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+section#welcome-section {
+  margin-top: 80px;
+  min-height: calc(100vh - var(--header-height));
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #14110f;
+  text-align: center;
+  padding: 0rem 2rem;
+}
+
+section#welcome-section h1 {
+  margin-bottom: 0;
+  border: none;
+  font-size: 3rem;
+  color: #ff2e00;
+}
+
+section#welcome-section p {
+  /* font-style: italic; */
+  font-size: 1.2rem;
+  color: white;
+}
+
+section#projects {
+  background-color: #2274a5;
+  padding: 80px 20px 80px;
+  text-align: center;
+}
+
+section#projects > h1 {
+  font-size: 2rem;
+}
+
+div.projects-container {
+  /* border: 1px solid white; */
+  margin: 10px 0px;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.project-tile {
+  width: 250px;
+  background-color: #14110f;
+}
+
+.project-tile p {
+  padding: 0px 2.5px;
+}
+
+.thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  transition: scale 0.5s ease;
+}
+
+.thumbnail:hover {
+  scale: 1.5;
+}
+
+section#projects > button {
+  height: 50px;
+  width: 150px;
+  background-color: #14110f;
+  border: none;
+  color: white;
+  transition: font-size 0.5s ease;
+}
+
+section#projects > button:hover {
+  font-size: 1rem;
+}
+
+footer {
+  height: 100vh;
+  background-color: #14110f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+footer > h1 {
+  border: none;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+footer > p {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #ff2e00;
+  text-align: center;
+}
+
+.platforms {
+  border: 1px solid white;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#profile-link {
+  transition: transform 0.6s ease;
+  padding: 20px 0;
+}
+
+#profile-link:hover {
+  transform: translateY(10px);
+}
+
+h1 {
+  border-bottom: 1px solid white;
+  display: inline;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  ul.links {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  a.navbar {
+    font-size: 1.5rem;
+  }
+
+  .project-tile {
+    width: 90%;
+    background-color: #14110f;
+  }
+}
+
+/* @media only screen and (max-width: 910px) {
+  section#welcome-section {
+    flex-direction: column;
+  }
+} */
