@@ -9,9 +9,14 @@ body {
 
 .links a,
 .platforms a,
+.platforms p,
 #projects a {
   text-decoration: none;
   color: #fff;
+}
+
+.platforms p {
+  margin: 0;
 }
 
 header {
