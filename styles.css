@@ -136,6 +136,32 @@ div.projects-container {
   scale: 1.5;
 }
 
+.banner {
+  position: relative;
+  transition: scale 0.5s ease;
+}
+
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.banner:hover {
+  scale: 1.5;
+}
+
+.banner-text {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
 section#projects > button {
   height: 50px;
   width: 150px;
