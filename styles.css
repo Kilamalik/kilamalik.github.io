@@ -135,6 +135,8 @@ div.projects-container {
 
 .thumbnail:hover {
   scale: 1.5;
+  position: relative;
+  z-index: 5;
 }
 
 .banner {
